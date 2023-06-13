@@ -52,8 +52,8 @@ const Contact = () => {
             <Title title="contact" des="contact with me" />
         </div>
         <div className='w-full'>
-                <div className='w-full h-auto flex justify-between'>
-                    <div className='w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne p-8 rounded-lg flex flex-col gap-8 justify-center'>
+                <div className='w-full h-auto flex flex-col lgl:flex-row justify-between'>
+                    <div className='w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center'>
                         <img className='w-full h-64 object-cover rounded-lg mb-2' src={contactImg} alt='contactImg' />
                         <div className='flex flex-col gap-4'>
                             <h3 className='text-3xl font-bold text-white'>John Doe</h3>
@@ -73,8 +73,8 @@ const Contact = () => {
                     </div>
 
                     {/* {Contact Form} */}
-                    <div className='w-[60%] h-full flex flex-col py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] gap-8 p-8 rounded-lg shadow-shadowOne'>
-                        <form className='w-full flex flex-col gap-6 py-5'>
+                    <div className='w-full lgl:w-[60%] h-full flex flex-col py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne'>
+                        <form className='w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5'>
                             {errMsg && (
                                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                                 {errMsg}
@@ -85,8 +85,8 @@ const Contact = () => {
                                 {successMsg}
                                 </p>
                             )}
-                            <div className='w-full flex gap-10'>
-                                <div className='w-1/2 flex flex-col gap-4'>
+                            <div className='w-full flex flex-col lgl:flex-row gap-10'>
+                                <div className='w-full lgl:w-1/2 flex flex-col gap-4'>
                                     <p className='text-sm text-gray-400 uppercase tracking-wide'>YOUR NAME</p>
                                     <input
                                         onChange={(e) => setUsername(e.target.value)}
@@ -98,7 +98,7 @@ const Contact = () => {
                                         type="text"
                                     />
                                 </div>
-                                <div className='w-1/2 flex flex-col gap-4'>
+                                <div className='w-full lgl:w-1/2 flex flex-col gap-4'>
                                     <p className='text-sm text-gray-400 uppercase tracking-wide'>phone number</p>
                                     <input
                                         onChange={(e) => setPhoneNumber(e.target.value)}

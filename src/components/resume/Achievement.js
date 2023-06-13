@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 const Achievement = () => {
   return (
-      <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:.5}}} className="w-full flex gap-20">
-        <div className="w-1/2">
-          <div className="py-12 font-titleFont">
+      <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{duration:.5}}} className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20">
+        <div className="w-full lgl:w-1/2">
+          <div className="py-6 lgl:py-12 font-titleFont">
             <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
-            <h2 className="text-4xl font-bold">Company Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Company Experience</h2>
           </div>
-          <div className="mt-8 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+          <div className="mt-2 lgl:mt-8 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
               title="BSc in Computer Science"
               subtitle="Chiangmai University (2019 - 2022)"
@@ -26,12 +26,12 @@ const Achievement = () => {
           </div>
         </div>
 
-        <div className="w-1/2">
-          <div className="py-12 font-titleFont">
+        <div className="w-full lgl:w-1/2">
+          <div className="py-6 lgl:py-12 font-titleFont">
             <p className="text-sm text-designColor tracking-[4px]">2007 - 2010</p>
-            <h2 className="text-4xl font-bold">Job Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
           </div>
-          <div className="mt-8 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+          <div className="mt-2 lgl:mt-8 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
               title="BSc in Computer Science"
               subtitle="Chiangmai University (2019 - 2022)"

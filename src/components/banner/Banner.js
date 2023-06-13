@@ -17,10 +17,10 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="w-full pt-10 pb-20 flex items-center border-b-[1px] border-d-black font-titleFont"
+      className="w-full pt-10 pb-20 flex flex-col lgl:flex-row gap-10 xl:gap-0 items-center border-b-[1px] border-d-black font-titleFont"
     >
       {/*left Banner*/}
-      <div className="w-1/2 flex flex-col gap-12">
+      <div className="w-full lg:w-1/2 flex flex-col gap-12">
         <div className="flex flex-col gap-5">
           <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
           <h1 className="text-6xl font-bold text-white">
@@ -44,7 +44,7 @@ const Banner = () => {
             laborum.
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
           <div>
             <h2 className="text-base uppercase font-titleFont mb-4">find me in</h2>
               <div className="flex gap-4">
@@ -76,9 +76,9 @@ const Banner = () => {
         </div>
       </div>
       {/*Right Banner */}
-      <div className="w-1/2 flex justify-center items-center relative">
-        <img src={bannerImg} alt="bannerImg" className="w-[500px] h-[680px] z-10"/>
-        <div className="absolute buttom-0 w-[500px] h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"></div>
+      <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+        <img src={bannerImg} alt="bannerImg" className="w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10"/>
+        <div className="absolute buttom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"></div>
       </div>
     </section>
   );
