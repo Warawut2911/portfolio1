@@ -25,7 +25,7 @@ const Banner = () => {
           <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
           <h1 className="text-6xl font-bold text-white">
             Hi i'm{" "}
-            <span className="text-designColor capitalize">Warawut_S</span>
+            <span className="text-designColor capitalize">Brittany Chiang</span>
           </h1>
           <h2 className="text-4xl font-bold text-white">
             a <span>{text}</span>
